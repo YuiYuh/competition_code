@@ -1,0 +1,12 @@
+*.exe
+*.out
+*.obj
+*.o
+*.log
+*.tmp
+*.bak
+.vscode/
+.idea/
+*.user
+*.sln
+*.vcxproj*
