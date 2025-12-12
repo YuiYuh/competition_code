@@ -1,12 +1,59 @@
-*.exe
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# ===== VS Code =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+
+# ===== C/C++ build outputs =====
+a.out
 *.out
-*.obj
 *.o
+*.obj
+*.exe
+*.dll
+*.dylib
+*.so
+*.a
+*.lib
+*.pdb
+*.dSYM/
+*.dSYM
+
+# ===== Common build folders =====
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.cmake
+compile_commands.json
+
+# ===== Python (just in case) =====
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ===== Logs / temp =====
 *.log
 *.tmp
-*.bak
-.vscode/
-.idea/
-*.user
-*.sln
-*.vcxproj*
+*.swp
+*~
+
+# ===== Archives / large stuff (optional) =====
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
