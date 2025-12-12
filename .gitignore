@@ -1,59 +1,26 @@
-# ===== macOS =====
+# macOS
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon?
 ._*
-.Spotlight-V100
-.Trashes
 
-# ===== VS Code =====
+# VS Code (只保留你需要的配置文件；其余都别上传)
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/c_cpp_properties.json
 
-# ===== C/C++ build outputs =====
+# C/C++ outputs
 a.out
 *.out
 *.o
-*.obj
-*.exe
-*.dll
-*.dylib
-*.so
-*.a
-*.lib
-*.pdb
 *.dSYM/
 *.dSYM
+*.exe
+*.obj
 
-# ===== Common build folders =====
+# Build folders
 build/
 cmake-build-*/
-CMakeFiles/
-CMakeCache.txt
-Makefile
-*.cmake
-compile_commands.json
 
-# ===== Python (just in case) =====
-__pycache__/
-*.pyc
-*.pyo
-.venv/
-venv/
-
-# ===== Logs / temp =====
-*.log
-*.tmp
-*.swp
-*~
-
-# ===== Archives / large stuff (optional) =====
-*.zip
-*.rar
-*.7z
-*.tar
-*.gz
+# (你将要用的输出目录)
+bin/
