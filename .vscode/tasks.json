@@ -4,12 +4,17 @@
     {
       "label": "Run C++ (clang++)",
       "type": "shell",
-      "command": "clang++ -std=c++17 -O2 \"${file}\" -o \"${fileDirname}/bin/run\" && \"${fileDirname}/bin/run\"",
+      "command": "mkdir -p \"${fileDirname}/bin\" && clang++ -std=c++17 -O2 \"${file}\" -o \"${fileDirname}/bin/run\" && \"${fileDirname}/bin/run\"",
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": ["$gcc"]
+      "problemMatcher": ["$gcc"],
+      "presentation": {
+        "panel": "new",
+        "reveal": "always",
+        "clear": true
+      }
     }
   ]
 }
