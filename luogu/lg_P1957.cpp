@@ -1,13 +1,15 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <cctype>
 using namespace std;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
     int i,a,b;
     cin >> i;
-    char status;
+    cin.ignore();
+    char status = '?';
     string s;
     while(i--){
         getline(cin,s);
@@ -26,11 +28,11 @@ int main(){
             res = to_string(a) + '+' + to_string(b) + '=' + to_string(a + b);
             cout << res << '\n'; 
             cout << res.size() << '\n';
-        }else if(status == 'b'){
+        }if(status == 'b'){
             res = to_string(a) + '-' + to_string(b) + '=' + to_string(a - b);
             cout << res << '\n';
             cout << res.size() << '\n';
-        }else if(status == 'c'){
+        }if(status == 'c'){
             res = to_string(a) + '*' + to_string(b) + '=' + to_string(a * b);
             cout << res << '\n';
             cout << res.size() << '\n';
