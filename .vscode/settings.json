@@ -1,0 +1,18 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.codeLens": false,
+  "editor.inlineSuggest.enabled": false,
+  "breadcrumbs.enabled": false,
+
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/bin/**": true,
+    "**/build/**": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/bin": true,
+    "**/build": true
+  }
+}

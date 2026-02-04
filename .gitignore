@@ -1,12 +1,26 @@
-*.exe
+# macOS
+.DS_Store
+._*
+
+# VS Code (只保留你需要的配置文件；其余都别上传)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+
+# C/C++ outputs
+a.out
 *.out
-*.obj
 *.o
-*.log
-*.tmp
-*.bak
-.vscode/
-.idea/
-*.user
-*.sln
-*.vcxproj*
+*.dSYM/
+*.dSYM
+*.exe
+*.obj
+
+# Build folders
+build/
+cmake-build-*/
+
+# (你将要用的输出目录)
+bin/
