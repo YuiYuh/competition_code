@@ -20,6 +20,6 @@
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
   "code-runner.executorMap": {
-    "cpp": "mkdir -p \"$workspaceRoot/bin\" && g++ \"$fullFileName\" -std=c++17 -o \"$workspaceRoot/bin/$fileNameWithoutExt\" && \"$workspaceRoot/bin/$fileNameWithoutExt\""
+    "cpp": "mkdir -p \"$workspaceRoot/bin\" && g++ \"$file\" -std=c++17 -o \"$workspaceRoot/bin/$fileNameWithoutExt\" && \"$workspaceRoot/bin/$fileNameWithoutExt\""
   }
 }
