@@ -237,8 +237,14 @@ int main(){
         }else{
             *it1 = temp;
         }
+        auto it2 = lower_bound(g2.begin(),g2.end(),temp);
+        if(it2 == g2.end()){
+            g2.push_back(temp);
+        }else{
+            *it2 = temp;
+        }
     }
-
+    cout << g1.size() << " " << g2.size() << '\n';
 
 
     return 0;
