@@ -1,12 +1,12 @@
-/* å¼ å®‡è±ªå¤§ä¸‰æœ€åçš„ç®—æ³•å¤ä¹ äº†  æ¥å¤ä¹ ä¸€ä¸‹å¼ å®‡è±ªæ‰€æœ‰å­¦è¿‡çš„ç®—æ³•ï¼Œ
-æ€ä¹ˆè¯´å‘¢ï¼Œå­¦äº†è¿™ä¹ˆä¹…çš„ç®—æ³•ï¼Œæ„Ÿè§‰ä¹Ÿæ²¡æœ‰ä»€ä¹ˆæ˜¯çœŸçš„è¿›è„‘å­é‡Œçš„ï¼Œä½†æ˜¯ååè¿æ°”å¥½ï¼Œè¿›äº†è“æ¡¥æ¯å›½èµ›
-æˆ‘åœ¨ç®—æ³•ä¸Šé¢èŠ±çš„æ—¶é—´ï¼Œå ªæ¯”æˆ‘å­¦æ•°å­¦èŠ±çš„æ—¶é—´äº†ï¼ŒçœŸçš„å€¼å¾—å—ï¼Œå…¶å®æˆ‘ä¸è®¤ä¸ºï¼Œæˆ‘ä¹Ÿä¸è®¤ä¸ºæˆ‘æœ‰æ¦‚ç‡æ‹¿å¥–
-é™¤éçœŸçš„è¿æ°”å¥½åˆ°çˆ†æ£šï¼Œå½“ç„¶æˆ‘ä¹Ÿä¸æ˜¯ä¸€ä¸ªè‡ªæš´è‡ªå¼ƒçš„äººï¼Œæœ‰è¿™ä¸ªæœºä¼šï¼Œé‚£æˆ‘è¿˜æ˜¯è¦äº‰å–ä¸€ä¸‹çš„ï¼Œå¤æ‚çš„ï¼Œæ•°è®ºæˆ‘è‚¯å®šæ˜¯ä¸ä¼šçš„
-å¸Œæœ›å¯ä»¥å¤šæš´åŠ›æ¥ç‚¹åˆ†æ•°å§ï¼ŒåŠ æ²¹ï¼Œæœ€åçš„å¤ä¹ ï¼Œè®°æ¸…æ¥šæ¨¡ç‰ˆï¼Œç„¶åå¥½å¥½å¤‡æˆ˜è€ƒç ”ï¼Œæˆ‘å§‹ç»ˆç›¸ä¿¡æˆ‘è‡ªå·±ã€‚*/
+/* ÕÅÓîºÀ´óÈı×îºóµÄËã·¨¸´Ï°ÁË  À´¸´Ï°Ò»ÏÂÕÅÓîºÀËùÓĞÑ§¹ıµÄËã·¨£¬
+ÔõÃ´ËµÄØ£¬Ñ§ÁËÕâÃ´¾ÃµÄËã·¨£¬¸Ğ¾õÒ²Ã»ÓĞÊ²Ã´ÊÇÕæµÄ½øÄÔ×ÓÀïµÄ£¬µ«ÊÇÆ«Æ«ÔËÆøºÃ£¬½øÁËÀ¶ÇÅ±­¹úÈü
+ÎÒÔÚËã·¨ÉÏÃæ»¨µÄÊ±¼ä£¬¿°±ÈÎÒÑ§ÊıÑ§»¨µÄÊ±¼äÁË£¬ÕæµÄÖµµÃÂğ£¬ÆäÊµÎÒ²»ÈÏÎª£¬ÎÒÒ²²»ÈÏÎªÎÒÓĞ¸ÅÂÊÄÃ½±
+³ı·ÇÕæµÄÔËÆøºÃµ½±¬Åï£¬µ±È»ÎÒÒ²²»ÊÇÒ»¸ö×Ô±©×ÔÆúµÄÈË£¬ÓĞÕâ¸ö»ú»á£¬ÄÇÎÒ»¹ÊÇÒªÕùÈ¡Ò»ÏÂµÄ£¬¸´ÔÓµÄ£¬ÊıÂÛÎÒ¿Ï¶¨ÊÇ²»»áµÄ
+Ï£Íû¿ÉÒÔ¶à±©Á¦À´µã·ÖÊı°É£¬¼ÓÓÍ£¬×îºóµÄ¸´Ï°£¬¼ÇÇå³şÄ£°æ£¬È»ºóºÃºÃ±¸Õ½¿¼ÑĞ£¬ÎÒÊ¼ÖÕÏàĞÅÎÒ×Ô¼º¡£*/
 
 
 
-//åŠ›æ‰£27
+//Á¦¿Û27
 int k = 0;
 for(int x : nums){
     if(x != val){
@@ -15,7 +15,7 @@ for(int x : nums){
 }
 return k;
 
-//åŠ›æ‰£977
+//Á¦¿Û977
 int l = 0;
 int r = nums.size();
 while(l <= r){
@@ -31,9 +31,9 @@ reverse(res.begin(),res.end());
 for(int i = 1; i <= n; ++ i){
     cin >> arr[i];
     pre[i] = pre[i - 1] + arr[i];
-}// ç”¨r - (l - 1);
+}// ÓÃr - (l - 1);
 
-//æ´›è°· 2005                                    
+//Âå¹È 2005                                    
 for(int i = 1; i <= n; ++ i){
     for(int j = 1; j <= m; ++ j){              
         cin >> arr[i][j];
@@ -42,7 +42,7 @@ for(int i = 1; i <= n; ++ i){
 }// s = pre[x2][y2] - pre[x1 - 1][y2] - pre[x2][y1 - 1] + pre[x1 - 1][y1 - 1];
 
 
-//æ´›è°· 1605
+//Âå¹È 1605
 void dfs(int x, int y){
     if(x == fx && y == fy){
         ans++;
@@ -62,7 +62,7 @@ void dfs(int x, int y){
     }
 }
 
-//æ´›è°· 1238
+//Âå¹È 1238
 typedef pair<int,int> PII;
 void dfs(int x, int y){
     if(x == endx && y == endy){
@@ -89,7 +89,7 @@ void dfs(int x, int y){
 
 }
 
-//æ´›è°· 1443
+//Âå¹È 1443
 void bfs(){
 
     while(hh <= tt){
@@ -109,7 +109,7 @@ void bfs(){
     
 }
 
-//è“æ¡¥ ç©¿è¶Šé›·åŒº
+//À¶ÇÅ ´©Ô½À×Çø
 int bfs(){
     while(hh <= tt){
         PII curr = q[hh++];
@@ -129,7 +129,7 @@ int bfs(){
     return -1;
 }
 
-//æ´›è°· 1379
+//Âå¹È 1379
 while(!q.empty()){
     string curr = q.front();
     q.pop();
@@ -176,7 +176,7 @@ for(int i = 0; i < nums.size(); ++ i){
 }
 return res;
 
-//æ´›è°· 1216
+//Âå¹È 1216
 for(int i = 1; i <= n; ++ i){
     dp[i] = arr[n][i];
 }
@@ -187,8 +187,8 @@ for(int i = n - 1; i >= 1; -- i){
 }
 cout << dp[1] << '\n';
 
-//æ´›è°· 1002
-//å…ˆè·‘ä¸€ä¸ªå¾ªç¯æ ‡è®°ä¸€ä¸‹é©¬å ç”¨çš„ä½ç½®æˆ‘è®°ä½bool ma[] ä¸ºtrue
+//Âå¹È 1002
+//ÏÈÅÜÒ»¸öÑ­»·±ê¼ÇÒ»ÏÂÂíÕ¼ÓÃµÄÎ»ÖÃÎÒ¼Ç×¡bool ma[] Îªtrue
 dp[0][0] = 1;
 for(int i = 0; i <= n; ++ i){
     for(int j = 0; j <= m; ++ j){
@@ -203,7 +203,7 @@ for(int i = 0; i <= n; ++ i){
 }
 cout << dp[end_x][end_y] << '\n';
 
-//æ´›è°· 1434 ä½ å’Œæˆ‘è®²ä¸€ä¸‹è¿™é¢˜ é‚£ä¸ªè½¬ç§»æ–¹ç¨‹æ€ä¹ˆæ¥çš„
+//Âå¹È 1434 ÄãºÍÎÒ½²Ò»ÏÂÕâÌâ ÄÇ¸ö×ªÒÆ·½³ÌÔõÃ´À´µÄ
 int mem[MAXN][MAXN];
 int dfs(int x, int y){
     if(mem[x][y] != 0) return mem[x][y];
@@ -218,7 +218,7 @@ int dfs(int x, int y){
     return mem[x][y];
 }
 
-//æ´›è°· 1020
+//Âå¹È 1020
 #include<iostream>
 using namespace std;
 
@@ -250,23 +250,23 @@ int main(){
     return 0;
 }
 
-//æ´›è°· 1048 v->ä»·å€¼ w->æƒé‡
+//Âå¹È 1048 v->¼ÛÖµ w->È¨ÖØ
 for(int i = 1; i <= m; ++ i){
     for(int j = t; j >= w[i]; -- j){
         dp[j] = max(dp[j], dp[j - w[i]] + v[i]);
     }
-}//dpä»£è¡¨ è¿™ä¸ªå®¹é‡ä¸ºjçš„èƒŒåŒ…æœ€å¤§ä»·å€¼
+}//dp´ú±í Õâ¸öÈİÁ¿ÎªjµÄ±³°ü×î´ó¼ÛÖµ
 //cout << dp[MAXN] << '\n';
 
-//æ´›è°· 1060 æˆ‘æœ¬æƒ³æ’åº åæ¥æ€è€ƒäº†ä¸€ä¸‹è¿™é¢˜ç®€ç›´å’Œä¸Šä¸€é¢˜ä¸€æ¨¡ä¸€æ ·
-//è¾“å…¥çš„æ—¶å€™væ•°ç»„ç›´æ¥ä¹˜é‡è¦åº¦ èƒŒåŒ…å®¹é‡å°±æ˜¯m
+//Âå¹È 1060 ÎÒ±¾ÏëÅÅĞò ºóÀ´Ë¼¿¼ÁËÒ»ÏÂÕâÌâ¼òÖ±ºÍÉÏÒ»ÌâÒ»Ä£Ò»Ñù
+//ÊäÈëµÄÊ±ºòvÊı×éÖ±½Ó³ËÖØÒª¶È ±³°üÈİÁ¿¾ÍÊÇm
 for(int i = 1; i <= n; ++ i){
     for(int j = m; j >= w[i]; j --){
         dp[j] = max(dp[j], dp[j - w[i]] + v[i]);
     }
 }
 
-//æ´›è°· 1616
+//Âå¹È 1616
 for(int i = 1; i <= m; ++ i){
     for(int j = w[i]; j <= t; ++ j){
         dp[j] = max(dp[j], dp[j - w[i]] + v[i]);
@@ -274,7 +274,7 @@ for(int i = 1; i <= m; ++ i){
 }
 //cout << dp[t] << '\n';
 
-//æ´›è°· 1757 æœ‰ç‚¹æ„æ€ åŒç»„äº’æ–¥å— æˆ‘æ€è€ƒä¸€ä¸‹ æœ‰ç‚¹ä¸ä¼š ä½ ç­‰ä¸‹å’Œæˆ‘è®²ä¸€è®²
+//Âå¹È 1757 ÓĞµãÒâË¼ Í¬×é»¥³âÂğ ÎÒË¼¿¼Ò»ÏÂ ÓĞµã²»»á ÄãµÈÏÂºÍÎÒ½²Ò»½²
 vector<PII> arr[MAXN];
 for(int g = 1; g <= max_group; ++ g){
     for(int j = m; j >= 0; -- j){
@@ -286,7 +286,7 @@ for(int g = 1; g <= max_group; ++ g){
     }
 }
 
-//æ´›è°· 1182
+//Âå¹È 1182
 bool check(int mid){
     int length = 0;
     int cnt = 1;
@@ -298,8 +298,8 @@ bool check(int mid){
         }
     }
     return cnt <= m;
-}// è¿™é‡Œçš„å¤§äºç­‰äºå°äºç­‰äºä½ å’Œæˆ‘è¯´ä¸€ä¸‹ æˆ‘æœ‰ç‚¹æä¸æ¸…æ¥šå•Š
-//æˆ‘å–œæ¬¢ç”¨ä¸‹é¢è¿™ç§
+}// ÕâÀïµÄ´óÓÚµÈÓÚĞ¡ÓÚµÈÓÚÄãºÍÎÒËµÒ»ÏÂ ÎÒÓĞµã¸ã²»Çå³ş°¡
+//ÎÒÏ²»¶ÓÃÏÂÃæÕâÖÖ
 while(l <= r){
     mid = (r - l) / 2 + l;
     if(check(mid)){
@@ -310,8 +310,8 @@ while(l <= r){
     }
 }
 
-//æ´›è°·  1873
-// l ä»0å¼€å§‹ rè®°å½•ä¸ºæœ€å¤§å€¼ è¾“å…¥çš„æ—¶å€™çš„å·¥ä½œ
+//Âå¹È  1873
+// l ´Ó0¿ªÊ¼ r¼ÇÂ¼Îª×î´óÖµ ÊäÈëµÄÊ±ºòµÄ¹¤×÷
 bool check(int mid){
     long long sum = 0;
     for(int i = 1; i <= n; ++ i){
@@ -322,12 +322,12 @@ bool check(int mid){
     return sum >= m;
 }
 
-//æ´›è°· 2367 å·®åˆ†æ€ä¹ˆå†™è¾“å…¥å‘¢ï¼Œï¼Œï¼ˆå·²ç»æƒ³å‡ºæ¥äº†ï¼‰
+//Âå¹È 2367 ²î·ÖÔõÃ´Ğ´ÊäÈëÄØ£¬£¬£¨ÒÑ¾­Ïë³öÀ´ÁË£©
 cin > n >> p;
 for(int i = 1; i <= n; ++ i){
     cin >> arr[i];
     d[i] = arr[i] - arr[i - 1];// 1 1 2 3 4 5
-                               // 1 0 1 1 1 1   æ¨¡æ‹Ÿä¸€ä¸‹
+                               // 1 0 1 1 1 1   Ä£ÄâÒ»ÏÂ
 }
 for(int i = 1; i <= p; ++ i){
     int x, y, z;
@@ -336,9 +336,9 @@ for(int i = 1; i <= p; ++ i){
     d[x] += z;
     d[y + 1] -= z;
 }
-//è·‘å¾ªç¯å–æœ€å°å€¼ ç„¶åè¾“å‡º
+//ÅÜÑ­»·È¡×îĞ¡Öµ È»ºóÊä³ö
 
-//æ´›è°· 3397 æ„Ÿè§‰äºŒç»´çš„ä¸œè¥¿éƒ½æ¯”ä¸€ç»´éš¾å•Š
+//Âå¹È 3397 ¸Ğ¾õ¶şÎ¬µÄ¶«Î÷¶¼±ÈÒ»Î¬ÄÑ°¡
 while(m--){
     cin >> x1 >> y1 >> x2 >> y2;
     d[x1][y1]++;
@@ -352,7 +352,7 @@ for(int i = 1; i <= n; ++ i){
     }
 }
 
-// åŠ›æ‰£ 1
+// Á¦¿Û 1
 unordered_map<int, int> mp;
 for(int i = 0; i < nums.size(); ++ i){
     auto p = mp.find(target - nums[i]);
@@ -363,7 +363,7 @@ for(int i = 0; i < nums.size(); ++ i){
     }
 }
 
-//æ´›è°· 3367   æˆ‘è¦è¯´faæ•°ç»„è¦åˆå§‹åŒ–ä¸ºè‡ªå·± è·¯å¾„å‹ç¼©çš„æ„ä¹‰æ˜¯å•¥å•Šå‘Šè¯‰æˆ‘
+//Âå¹È 3367   ÎÒÒªËµfaÊı×éÒª³õÊ¼»¯Îª×Ô¼º Â·¾¶Ñ¹ËõµÄÒâÒåÊÇÉ¶°¡¸æËßÎÒ
 void merge(int x, int y){
     int rootX = find(x);
     int rootY = find(y);
@@ -376,7 +376,7 @@ int find(int x){
     return fa[x] = find(fa[x]);
 }
 
-//æ´›è°· 1551  è¿™ä¸æ˜¯å’Œä¸Šé¢ä¸€æ¨¡ä¸€æ ·å—
+//Âå¹È 1551  Õâ²»ÊÇºÍÉÏÃæÒ»Ä£Ò»ÑùÂğ
 int find(int x){
     if(fa[x] == x) return x;
     return fa[x] = find(fa[x]);
@@ -392,9 +392,9 @@ string is_relative(int x, int y){
     if(find(x) == find(y)) return "Yes";
     return "No";
 }
-//ç„¶åè¾“å…¥çš„æ—¶å€™åšå¥½å‡†å¤‡å·¥ä½œå°±è¡Œäº†
+//È»ºóÊäÈëµÄÊ±ºò×öºÃ×¼±¸¹¤×÷¾ÍĞĞÁË
 
-//æ´›è°· 4779 dijkstra å±•ç¤ºæˆ‘å®Œæ•´ä»£ç çš„èƒ½åŠ› è¿™ä¸ªè¦æé†’æˆ‘å¤ä¹ çš„  
+//Âå¹È 4779 dijkstra Õ¹Ê¾ÎÒÍêÕû´úÂëµÄÄÜÁ¦ Õâ¸öÒªÌáĞÑÎÒ¸´Ï°µÄ  
 #include<iostream>
 using namespace std;
 
@@ -446,7 +446,7 @@ int main(){
     cin.tie(0),cout.tie(0);
 
     cin >> n >> m >> s;
-    //å»ºå›¾
+    //½¨Í¼
     for(int i = 1; i <= m; ++ i){
         int u, v, w;
         cin >> u >> v >> w;
@@ -460,10 +460,10 @@ int main(){
 
     return 0;
 }
-//ä»‹äºä¸Šé¢çš„dijkstraæœ‰å€Ÿé‰´çš„æˆåˆ† æˆ‘å†³å®šå†è‡ªå·±æ‰‹æ‰“ä¸€é
+//½éÓÚÉÏÃæµÄdijkstraÓĞ½è¼øµÄ³É·Ö ÎÒ¾ö¶¨ÔÙ×Ô¼ºÊÖ´òÒ»±é
 void dijkstra(){
     memset(dis, 0x3f, sizeof dis);
-    priority_queue<Node> pq;// å·²ç»é‡è½½å°äºå·äº†
+    priority_queue<Node> pq;// ÒÑ¾­ÖØÔØĞ¡ÓÚºÅÁË
     
     pq.push({s, 0});
     dis[s] = 0;
@@ -486,7 +486,7 @@ void dijkstra(){
     }
 }
 
-//æ´›è°· 3366 find mergeæˆ‘å°±ä¸å†™äº†
+//Âå¹È 3366 find mergeÎÒ¾Í²»Ğ´ÁË
 struct Edge{
     int u, v, w;
 };
@@ -510,6 +510,168 @@ for(int i = 0; i < e.size(); ++ i){
         merge(u, v);
         sum += w;
         cnt++;
-        if(cnt == n - 1) break;//è¿å®Œäº† è¦æ˜¯ä¸ç­‰äºçš„è¯å°±è¯´æ˜æ ¹æœ¬è¿æ¥ä¸ä¸Šã€‚
+        if(cnt == n - 1) break;//Á¬ÍêÁË ÒªÊÇ²»µÈÓÚµÄ»°¾ÍËµÃ÷¸ù±¾Á¬½Ó²»ÉÏ¡£
     }
-}//è¿æ¥å®Œäº†å°±è¾“å‡ºsum å¦åˆ™orz
+}//Á¬½ÓÍêÁË¾ÍÊä³ösum ·ñÔòorz
+
+//Âå¹È 4017  ÎÒÊÇ³­Ğ´µÄ ²»¹ıÀí½âÒâË¼ÁË 
+#include<bits/stdc++.h>
+using namespace std;
+const int N = 5010;
+const int MOD = 80112002;
+
+int n, m;
+vector<int> g[N];
+int indeg[N];
+int outdeg[N];
+int dp[N];
+
+int main(){
+	ios::sync_with_stdio(false);
+	cin.tie(0),cout.tie(0);
+	
+	cin >> n >> m;
+	for(int i = 1; i <= m; ++ i){
+		int a, b;
+		cin >> a >> b;
+		g[a].push_back(b);
+		indeg[b]++;
+		outdeg[a]++;
+	}
+	queue<int> q;
+	for(int i = 1; i <= n; ++ i){
+		if(indeg[i] == 0){
+			q.push(i);
+			dp[i] = 1;
+		}
+	}
+	while(!q.empty()){
+		int u = q.front();
+		q.pop();
+		for(int v : g[u]){
+			dp[v] = (dp[v] + dp[u]) % MOD;
+			indeg[v]--;
+			if(indeg[v] == 0){
+				q.push(v);
+			}
+		}
+	}
+	int ans = 0;
+	for(int i = 1; i <= n; ++ i){
+		if(outdeg[i] == 0){
+			ans = (ans + dp[i]) % MOD;
+		}
+	}
+	cout << ans << endl;
+	return 0;
+}
+
+// Âå¹È 1226
+long long qpow(int a, int b, int p){
+	a = a % p;
+	long long ans = 1;
+	if(b == 0) return 1;
+	if(b == 1) return a;
+	
+	while(b > 0){
+		if(b & 1){
+			ans = ans * a % p;
+		}
+		b >>= 1;
+		a = (a * a) % p;
+	}
+	
+	return ans % p;
+}
+
+//Âå¹È 3383   ·¶Î§1-n
+bool is_nprime[MAXN];
+int primes[MAXN];
+int n;
+void get_prime(){
+	int cnt = 1;
+	for(int i = 2; i <= n; ++ i){
+		if(!is_nprime[i]) primes[cnt++] = i;
+		for(int j = 1; j < cnt && i * primes[j] <= n; ++ j){
+			is_nprime[i * primes[j]] = true;
+			if(i % primes[j] == 0){
+				break;
+			}
+		}
+	}
+}
+
+//Âå¹È 1886
+#include<bits/stdc++.h>
+using namespace std;
+
+const int MAXN = 1e6 + 10;
+int n, k;
+int arr[MAXN];
+
+int main(){
+	ios::sync_with_stdio(false);
+	cin.tie(0),cout.tie(0);
+	
+	cin >> n >> k;
+	
+	for(int i = 1; i <= n; ++ i){
+		cin >> arr[i];
+	}
+	
+	deque<int> qMIN;
+	deque<int> qMAX;
+	
+	for(int i = 1; i <= n; ++ i){
+		while(!qMIN.empty() && arr[qMIN.back()] >= arr[i]){
+			qMIN.pop_back();
+		}
+		qMIN.push_back(i);
+		
+		if(qMIN.front() <= i - k){
+			qMIN.pop_front();
+		}
+		if(i >= k){
+			cout << arr[qMIN.front] << " ";
+		}	
+	}	
+	return 0;
+}
+ 
+// leetcode 239 Í¬ÉÏ ²»¹ıÉÏÃæÓĞµãÈÆ½øÈ¥ÁË ÕâÌâÎÒÒªÊÖ´ê³öÀ´ 
+class Solution {
+public:
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        deque<int> dq;
+        vector<int> ans;
+        for(int i = 0; i < nums.size(); ++ i){
+        	while(!dq.empty() && nums[dq.back()] <= nums[i]){
+        		dq.pop_back();
+			}
+			dq.push_back(i);
+			if(dq.front() <= i - k){
+				dq.pop_front();
+			}
+			if(i >= k - 1){
+				ans.push_back(nums[dq.front()]);
+			}
+				
+		}
+		return ans;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
